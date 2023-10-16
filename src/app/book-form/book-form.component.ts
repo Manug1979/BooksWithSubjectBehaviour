@@ -25,5 +25,10 @@ export class BookFormComponent {
     this.bookForm.reset();
   }
 
+  onDelete() {
+    this.bookService.DeleteBook();
+  }
+
+
 }
 

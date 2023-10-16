@@ -21,4 +21,18 @@ export class BookService {
     bookList.push(book);
     this.bookList.next(bookList);
   }
+
+  DeleteBook(){
+    const bookList = this.bookList.getValue();
+    bookList.splice(0, 1);
+    this.bookList.next(bookList);
+  }
+
+  UpdateBook(book:Book){ 
+    const bookList = this.bookList.getValue();    
+    const index = bookList.indexOf(book);
+    bookList[index] = book;
+    this.bookList.next(bookList);
+  }
+  
 }
