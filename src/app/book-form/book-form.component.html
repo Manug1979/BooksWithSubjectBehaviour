@@ -1,0 +1,35 @@
+<form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+  
+    <label>
+      Title:
+      <input type="text" formControlName="title">
+    </label>
+  
+    <label>
+      Cover:
+      <input type="text" formControlName="cover">
+    </label>
+  
+    <label>
+      Author Firstname:
+      <input type="text" formControlName="authorFirstname">
+    </label>
+  
+    <label>
+      Author Lastname:
+      <input type="text" formControlName="authorLastname">
+    </label>
+  
+    <label>
+      Release Date:
+      <input type="number" formControlName="releaseDate">
+    </label>
+  
+    <label>
+      Page Count:
+      <input type="number" formControlName="pageCount">
+    </label>
+  
+    <button type="submit">Submit</button>
+  
+  </form>
